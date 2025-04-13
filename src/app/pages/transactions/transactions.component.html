@@ -1,0 +1,59 @@
+<div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+  <div class="flex justify-end">
+    <button
+      class="bg-blue-500 cursor-pointer hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+    >
+      <!-- (click)="handleOpenModel()" -->
+      Add Transaction
+    </button>
+    <!-- Modal -->
+  </div>
+  <table class="w-full text-sm text-left rtl:text-right text-gray-500">
+    <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+      <tr>
+        <th scope="col" class="px-6 py-3">ID</th>
+        <th scope="col" class="px-6 py-3">Sender Id</th>
+        <th scope="col" class="px-6 py-3">Sender Name</th>
+        <th scope="col" class="px-6 py-3">Recipient Id</th>
+        <th scope="col" class="px-6 py-3">Recipient Name</th>
+        <th scope="col" class="px-6 py-3">Amount</th>
+        <th scope="col" class="px-6 py-3">Description</th>
+        <th scope="col" class="px-6 py-3">Date</th>
+        <!-- <th scope="col" class="px-6 py-3">Actions</th> -->
+      </tr>
+    </thead>
+    @for (tran of transactions(); track $index) {
+    <tbody>
+      <tr class="odd:bg-white even:bg-gray-50 border-b border-gray-200">
+        <th
+          scope="row"
+          class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+        >
+          {{ $index + 1 }}
+        </th>
+        <td class="px-6 py-4">{{ tran.senderId }}</td>
+        <td class="px-6 py-4">{{ tran.senderName }}</td>
+        <td class="px-6 py-4">{{ tran.recipientId }}</td>
+        <td class="px-6 py-4">{{ tran.recipientName }}</td>
+        <td class="px-6 py-4">{{ tran.amount | currency }}</td>
+        <td class="px-6 py-4">{{ tran.description }}</td>
+        <td class="px-6 py-4">{{ tran.date | date : "medium" }}</td>
+        <!-- <td class="px-6 py-4">
+          <a
+            routerLink="/users/{{ tran.id }}"
+            class="font-medium text-blue-600 hover:underline"
+            >Edit</a
+          > -->
+        <!-- delete button -->
+        <!-- <button
+              (click)="deleteUser(tran.id)"
+              class="font-medium text-white rounded-md cursor-pointer bg-red-500 ml-2 py-1 px-3 hover:underline"
+            >
+              Delete
+            </button> -->
+        <!-- </td> -->
+      </tr>
+    </tbody>
+    }
+  </table>
+</div>

@@ -1,0 +1,520 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "fullName": "Ahmed Yusuf",
+      "email": "ahmed@mail.com",
+      "accountNumber": "ACC1001",
+      "balance": 5000,
+      "password": "123",
+      "role": "user"
+    },
+    {
+      "id": "2",
+      "fullName": "Abdi Ali",
+      "email": "abdi@mail.com",
+      "accountNumber": "ACC1002",
+      "balance": 3200,
+      "password": "123",
+      "role": "user"
+    },
+    {
+      "id": "3",
+      "fullName": "Hodan Ibrahim",
+      "email": "hodan@mail.com",
+      "accountNumber": "ACC1003",
+      "balance": 4500,
+      "password": "123",
+      "role": "admin"
+    },
+    {
+      "id": "4",
+      "fullName": "Khadar Mohamed",
+      "email": "khadar@mail.com",
+      "accountNumber": "ACC1004",
+      "balance": 2100,
+      "role": "user"
+    },
+    {
+      "id": "5",
+      "fullName": "Layla Warsame",
+      "email": "layla@mail.com",
+      "accountNumber": "ACC1005",
+      "balance": 7500,
+      "role": "admin"
+    },
+    {
+      "id": "6",
+      "fullName": "Mohamed Adan",
+      "email": "mohamed@mail.com",
+      "accountNumber": "ACC1006",
+      "balance": 4300,
+      "role": "user"
+    },
+    {
+      "id": "7",
+      "fullName": "Nasra Haji",
+      "email": "nasra@mail.com",
+      "accountNumber": "ACC1007",
+      "balance": 6700,
+      "role": "user"
+    },
+    {
+      "id": "8",
+      "fullName": "Hussein Dini",
+      "email": "hussein@mail.com",
+      "accountNumber": "ACC1008",
+      "balance": 1500,
+      "role": "user"
+    },
+    {
+      "id": "9",
+      "fullName": "Ifrah Osman",
+      "email": "ifrah@mail.com",
+      "accountNumber": "ACC1009",
+      "balance": 3900,
+      "role": "user"
+    },
+    {
+      "id": "10",
+      "fullName": "Liban Salat",
+      "email": "liban@mail.com",
+      "accountNumber": "ACC1010",
+      "balance": 9000,
+      "role": "user"
+    },
+    {
+      "id": "11",
+      "fullName": "Ali Noor",
+      "email": "ali@mail.com",
+      "accountNumber": "ACC1011",
+      "balance": 2300,
+      "role": "user"
+    },
+    {
+      "id": "12",
+      "fullName": "Zahra Jama",
+      "email": "zahra@mail.com",
+      "accountNumber": "ACC1012",
+      "balance": 3500,
+      "role": "user"
+    },
+    {
+      "id": "13",
+      "fullName": "Yasmin Barre",
+      "email": "yasmin@mail.com",
+      "accountNumber": "ACC1013",
+      "balance": 2800,
+      "role": "admin"
+    },
+    {
+      "id": "14",
+      "fullName": "Muna Ismail",
+      "email": "muna@mail.com",
+      "accountNumber": "ACC1014",
+      "balance": 1400,
+      "role": "user"
+    },
+    {
+      "id": "15",
+      "fullName": "Jibril Farah",
+      "email": "jibril@mail.com",
+      "accountNumber": "ACC1015",
+      "balance": 8200,
+      "role": "user"
+    },
+    {
+      "id": "16",
+      "fullName": "Shukri Omar",
+      "email": "shukri@mail.com",
+      "accountNumber": "ACC1016",
+      "balance": 6100,
+      "role": "user"
+    },
+    {
+      "id": "17",
+      "fullName": "Sagal Abdullahi",
+      "email": "sagal@mail.com",
+      "accountNumber": "ACC1017",
+      "balance": 1900,
+      "role": "user"
+    },
+    {
+      "id": "18",
+      "fullName": "Omar Isse",
+      "email": "omar@mail.com",
+      "accountNumber": "ACC1018",
+      "balance": 500,
+      "role": "user"
+    },
+    {
+      "id": "19",
+      "fullName": "Hani Yare",
+      "email": "hani@mail.com",
+      "accountNumber": "ACC1019",
+      "balance": 3800,
+      "role": "user"
+    },
+    {
+      "id": "20",
+      "fullName": "Salma Hassan",
+      "email": "salma@mail.com",
+      "accountNumber": "ACC1020",
+      "balance": 4600,
+      "role": "user"
+    },
+    {
+      "id": "100",
+      "fullName": "Abukar Mukhtar Ali",
+      "email": "abukar@hello.io",
+      "password": "123",
+      "accountNumber": "ACC101",
+      "balance": 1000,
+      "role": "admin"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "1",
+      "senderId": 1,
+      "recipientId": 6,
+      "amount": 985,
+      "description": "Paid User 6",
+      "date": "2025-04-01T00:00:00Z"
+    },
+    {
+      "id": "2",
+      "senderId": 2,
+      "recipientId": 7,
+      "amount": 110,
+      "description": "Paid User 7",
+      "date": "2025-04-02T00:00:00Z"
+    },
+    {
+      "id": "3",
+      "senderId": 3,
+      "recipientId": 8,
+      "amount": 508,
+      "description": "Paid User 8",
+      "date": "2025-04-03T00:00:00Z"
+    },
+    {
+      "id": "4",
+      "senderId": 4,
+      "recipientId": 9,
+      "amount": 805,
+      "description": "Paid User 9",
+      "date": "2025-04-04T00:00:00Z"
+    },
+    {
+      "id": "5",
+      "senderId": 5,
+      "recipientId": 10,
+      "amount": 968,
+      "description": "Paid User 10",
+      "date": "2025-04-05T00:00:00Z"
+    },
+    {
+      "id": "6",
+      "senderId": 6,
+      "recipientId": 11,
+      "amount": 857,
+      "description": "Paid User 11",
+      "date": "2025-04-06T00:00:00Z"
+    },
+    {
+      "id": "7",
+      "senderId": 7,
+      "recipientId": 12,
+      "amount": 498,
+      "description": "Paid User 12",
+      "date": "2025-04-07T00:00:00Z"
+    },
+    {
+      "id": "8",
+      "senderId": 8,
+      "recipientId": 13,
+      "amount": 390,
+      "description": "Paid User 13",
+      "date": "2025-04-08T00:00:00Z"
+    },
+    {
+      "id": "9",
+      "senderId": 9,
+      "recipientId": 14,
+      "amount": 254,
+      "description": "Paid User 14",
+      "date": "2025-04-09T00:00:00Z"
+    },
+    {
+      "id": "10",
+      "senderId": 10,
+      "recipientId": 15,
+      "amount": 673,
+      "description": "Paid User 15",
+      "date": "2025-04-10T00:00:00Z"
+    },
+    {
+      "id": "11",
+      "senderId": 11,
+      "recipientId": 16,
+      "amount": 942,
+      "description": "Paid User 16",
+      "date": "2025-04-11T00:00:00Z"
+    },
+    {
+      "id": "12",
+      "senderId": 12,
+      "recipientId": 17,
+      "amount": 387,
+      "description": "Paid User 17",
+      "date": "2025-04-12T00:00:00Z"
+    },
+    {
+      "id": "13",
+      "senderId": 13,
+      "recipientId": 18,
+      "amount": 905,
+      "description": "Paid User 18",
+      "date": "2025-04-13T00:00:00Z"
+    },
+    {
+      "id": "14",
+      "senderId": 14,
+      "recipientId": 19,
+      "amount": 825,
+      "description": "Paid User 19",
+      "date": "2025-04-14T00:00:00Z"
+    },
+    {
+      "id": "15",
+      "senderId": 15,
+      "recipientId": 20,
+      "amount": 416,
+      "description": "Paid User 20",
+      "date": "2025-04-15T00:00:00Z"
+    },
+    {
+      "id": "16",
+      "senderId": 16,
+      "recipientId": 1,
+      "amount": 267,
+      "description": "Paid User 1",
+      "date": "2025-04-16T00:00:00Z"
+    },
+    {
+      "id": "17",
+      "senderId": 17,
+      "recipientId": 2,
+      "amount": 185,
+      "description": "Paid User 2",
+      "date": "2025-04-17T00:00:00Z"
+    },
+    {
+      "id": "18",
+      "senderId": 18,
+      "recipientId": 3,
+      "amount": 403,
+      "description": "Paid User 3",
+      "date": "2025-04-18T00:00:00Z"
+    },
+    {
+      "id": "19",
+      "senderId": 19,
+      "recipientId": 4,
+      "amount": 234,
+      "description": "Paid User 4",
+      "date": "2025-04-19T00:00:00Z"
+    },
+    {
+      "id": "20",
+      "senderId": 20,
+      "recipientId": 5,
+      "amount": 127,
+      "description": "Paid User 5",
+      "date": "2025-04-20T00:00:00Z"
+    }
+  ],
+  "loans": [
+    {
+      "id": "1",
+      "userId": 1,
+      "amount": 3874,
+      "status": "approved",
+      "termMonths": 6,
+      "interestRate": 3.5,
+      "createdAt": "2025-03-01T00:00:00Z"
+    },
+    {
+      "id": "2",
+      "userId": 2,
+      "amount": 1219,
+      "status": "pending",
+      "termMonths": 12,
+      "interestRate": 5,
+      "createdAt": "2025-03-02T00:00:00Z"
+    },
+    {
+      "id": "3",
+      "userId": 3,
+      "amount": 4785,
+      "status": "rejected",
+      "termMonths": 18,
+      "interestRate": 4.2,
+      "createdAt": "2025-03-03T00:00:00Z"
+    },
+    {
+      "id": "4",
+      "userId": 4,
+      "amount": 1464,
+      "status": "approved",
+      "termMonths": 24,
+      "interestRate": 3.5,
+      "createdAt": "2025-03-04T00:00:00Z"
+    },
+    {
+      "id": "5",
+      "userId": 5,
+      "amount": 1130,
+      "status": "pending",
+      "termMonths": 6,
+      "interestRate": 5,
+      "createdAt": "2025-03-05T00:00:00Z"
+    },
+    {
+      "id": "6",
+      "userId": 6,
+      "amount": 2801,
+      "status": "rejected",
+      "termMonths": 12,
+      "interestRate": 4.2,
+      "createdAt": "2025-03-06T00:00:00Z"
+    },
+    {
+      "id": "7",
+      "userId": 7,
+      "amount": 3283,
+      "status": "approved",
+      "termMonths": 18,
+      "interestRate": 3.5,
+      "createdAt": "2025-03-07T00:00:00Z"
+    },
+    {
+      "id": "8",
+      "userId": 8,
+      "amount": 3081,
+      "status": "pending",
+      "termMonths": 24,
+      "interestRate": 5,
+      "createdAt": "2025-03-08T00:00:00Z"
+    },
+    {
+      "id": "9",
+      "userId": 9,
+      "amount": 4926,
+      "status": "rejected",
+      "termMonths": 6,
+      "interestRate": 4.2,
+      "createdAt": "2025-03-09T00:00:00Z"
+    },
+    {
+      "id": "10",
+      "userId": 10,
+      "amount": 3266,
+      "status": "approved",
+      "termMonths": 12,
+      "interestRate": 3.5,
+      "createdAt": "2025-03-10T00:00:00Z"
+    },
+    {
+      "id": "11",
+      "userId": 11,
+      "amount": 1960,
+      "status": "pending",
+      "termMonths": 18,
+      "interestRate": 5,
+      "createdAt": "2025-03-11T00:00:00Z"
+    },
+    {
+      "id": "12",
+      "userId": 12,
+      "amount": 2932,
+      "status": "rejected",
+      "termMonths": 24,
+      "interestRate": 4.2,
+      "createdAt": "2025-03-12T00:00:00Z"
+    },
+    {
+      "id": "13",
+      "userId": 13,
+      "amount": 1478,
+      "status": "approved",
+      "termMonths": 6,
+      "interestRate": 3.5,
+      "createdAt": "2025-03-13T00:00:00Z"
+    },
+    {
+      "id": "14",
+      "userId": 14,
+      "amount": 3549,
+      "status": "pending",
+      "termMonths": 12,
+      "interestRate": 5,
+      "createdAt": "2025-03-14T00:00:00Z"
+    },
+    {
+      "id": "15",
+      "userId": 15,
+      "amount": 1041,
+      "status": "rejected",
+      "termMonths": 18,
+      "interestRate": 4.2,
+      "createdAt": "2025-03-15T00:00:00Z"
+    },
+    {
+      "id": "16",
+      "userId": 16,
+      "amount": 4995,
+      "status": "approved",
+      "termMonths": 24,
+      "interestRate": 3.5,
+      "createdAt": "2025-03-16T00:00:00Z"
+    },
+    {
+      "id": "17",
+      "userId": 17,
+      "amount": 3774,
+      "status": "pending",
+      "termMonths": 6,
+      "interestRate": 5,
+      "createdAt": "2025-03-17T00:00:00Z"
+    },
+    {
+      "id": "18",
+      "userId": 18,
+      "amount": 4548,
+      "status": "rejected",
+      "termMonths": 12,
+      "interestRate": 4.2,
+      "createdAt": "2025-03-18T00:00:00Z"
+    },
+    {
+      "id": "19",
+      "userId": 19,
+      "amount": 3210,
+      "status": "approved",
+      "termMonths": 18,
+      "interestRate": 3.5,
+      "createdAt": "2025-03-19T00:00:00Z"
+    },
+    {
+      "id": "20",
+      "userId": 20,
+      "amount": 2300,
+      "status": "pending",
+      "termMonths": 24,
+      "interestRate": 5,
+      "createdAt": "2025-03-20T00:00:00Z"
+    }
+  ]
+}

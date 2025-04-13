@@ -1,0 +1,61 @@
+<div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+  <div class="flex justify-end">
+    <button
+      class="bg-blue-500 cursor-pointer hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      (click)="handleOpenModel()"
+    >
+      Add User
+    </button>
+    <!-- Modal -->
+    <div
+      *ngIf="isOpenModel()"
+      class="fixed inset-0 flex items-center justify-center bg-opacity-50"
+    >
+      <app-add-user (handleCloseModel)="handleCloseModel()" />
+    </div>
+  </div>
+  <table class="w-full text-sm text-left rtl:text-right text-gray-500">
+    <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+      <tr>
+        <th scope="col" class="px-6 py-3">ID</th>
+        <th scope="col" class="px-6 py-3">Name</th>
+        <th scope="col" class="px-6 py-3">Email</th>
+        <th scope="col" class="px-6 py-3">Account Number</th>
+        <th scope="col" class="px-6 py-3">Balance</th>
+        <th scope="col" class="px-6 py-3">Role</th>
+        <th scope="col" class="px-6 py-3">Actions</th>
+      </tr>
+    </thead>
+    @for (user of userService.users(); track user.id) {
+    <tbody>
+      <tr class="odd:bg-white even:bg-gray-50 border-b border-gray-200">
+        <th
+          scope="row"
+          class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+        >
+          {{ user.id }}
+        </th>
+        <td class="px-6 py-4">{{ user.fullName }}</td>
+        <td class="px-6 py-4">{{ user.email }}</td>
+        <td class="px-6 py-4">{{ user.accountNumber }}</td>
+        <td class="px-6 py-4">{{ user.balance | currency }}</td>
+        <td class="px-6 py-4">{{ user.role }}</td>
+        <td class="px-6 py-4">
+          <a
+            routerLink="/users/{{ user.id }}"
+            class="font-medium text-blue-600 hover:underline"
+            >Edit</a
+          >
+          <!-- delete button -->
+          <button
+            (click)="deleteUser(user.id)"
+            class="font-medium text-white rounded-md cursor-pointer bg-red-500 ml-2 py-1 px-3 hover:underline"
+          >
+            Delete
+          </button>
+        </td>
+      </tr>
+    </tbody>
+    }
+  </table>
+</div>

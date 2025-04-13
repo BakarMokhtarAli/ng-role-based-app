@@ -31,7 +31,7 @@ A modern banking dashboard built with **Angular 19**, **Tailwind CSS**, and **Rx
 
 ```bash
 git clone https://github.com/your-username/ng-banking-dashboard.git
-cd ng-banking-dashboard
+cd ng-role-based-app
 ```
 ### 2. 2. Install dependencies
 ```bash

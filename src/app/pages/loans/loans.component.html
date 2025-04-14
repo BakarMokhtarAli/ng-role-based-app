@@ -2,11 +2,17 @@
   <div class="flex justify-end">
     <button
       class="bg-blue-500 cursor-pointer hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      (click)="handleOpenModel()"
     >
-      <!-- (click)="handleOpenModel()" -->
       Take Loan
     </button>
     <!-- Modal -->
+    <div
+      *ngIf="isOpen()"
+      class="fixed inset-0 flex items-center justify-center bg-opacity-50"
+    >
+      <app-take-loan (onCloseModal)="handleCloseModal()" />
+    </div>
   </div>
   <table class="w-full text-sm text-left rtl:text-right text-gray-500">
     <thead class="text-xs text-gray-700 uppercase bg-gray-50">
@@ -18,7 +24,6 @@
         <th scope="col" class="px-6 py-3">TERMS MONTH</th>
         <th scope="col" class="px-6 py-3">INTERESTED RATE</th>
         <th scope="col" class="px-6 py-3">STATUS</th>
-        <!-- <th scope="col" class="px-6 py-3">Actions</th> -->
         <th scope="col" class="px-6 py-3">Date</th>
         <!-- <th scope="col" class="px-6 py-3">Actions</th> -->
       </tr>

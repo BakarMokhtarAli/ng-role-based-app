@@ -21,6 +21,12 @@ export class LoginComponent {
   router = inject(Router);
   // constructor(public userService: UserService, router: Router) {}
 
+  ngOnInit() {
+    if (this.userService.isLoggedIn()) {
+      this.router.navigate(['/transactions']);
+    }
+  }
+
   login() {
     this.userService.login(this.email, this.password).subscribe({
       next: (users) => {

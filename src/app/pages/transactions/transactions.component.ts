@@ -4,10 +4,11 @@ import { Transaction } from '../../model/transaction';
 import { RouterLink } from '@angular/router';
 import { CurrencyPipe, DatePipe, NgIf } from '@angular/common';
 import { UserService } from '../../services/user.service';
+import { MakeTransactionComponent } from '../../components/make-transaction/make-transaction.component';
 
 @Component({
   selector: 'app-transactions',
-  imports: [RouterLink, CurrencyPipe, DatePipe, NgIf],
+  imports: [RouterLink, CurrencyPipe, DatePipe, NgIf, MakeTransactionComponent],
   templateUrl: './transactions.component.html',
   styles: ``,
 })
@@ -15,6 +16,14 @@ export class TransactionsComponent {
   transactionService = inject(TransactionService);
   userService = inject(UserService);
   transactions = signal<Transaction[]>([]);
+  isOpen = signal(false);
+
+  handleOpenModel() {
+    this.isOpen.set(true);
+  }
+  handleCloseModal() {
+    this.isOpen.set(false);
+  }
 
   // constructor(private transActionSerice: TransactionService) { }
 

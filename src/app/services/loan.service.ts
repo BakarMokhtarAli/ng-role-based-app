@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable, signal } from '@angular/core';
-import { forkJoin, map, Observable, of } from 'rxjs';
+import { catchError, finalize, forkJoin, map, Observable, of } from 'rxjs';
 import { UserService } from './user.service';
 import { Loan } from '../model/loan';
 import { User } from '../model/user';
@@ -11,6 +11,8 @@ import { User } from '../model/user';
 export class LoanService {
   private baseURL = 'http://localhost:3001';
   loans = signal<Loan[]>([]); // contains enriched loan data
+  isLoading = signal(false);
+  error = signal<string | null>(null);
 
   userService = inject(UserService);
   http = inject(HttpClient);
@@ -65,5 +67,30 @@ export class LoanService {
         });
       })
     );
+  }
+
+  // create loan
+  createLoan(loan: Loan): Observable<Loan> {
+    this.isLoading.set(true);
+    this.error.set(null);
+    return this.http.post<Loan>(`${this.baseURL}/loans`, loan).pipe(
+      finalize(() => this.isLoading.set(false)),
+      catchError((err) => {
+        this.error.set('Failed to create loan');
+        return of(loan); // or throwError if you want to break
+      })
+    );
+  }
+  generateId(): string {
+    // Get current year
+    const year = new Date().getFullYear().toString().slice(-2);
+
+    // Generate random 2 digit number
+    const randomNum = Math.floor(Math.random() * 99)
+      .toString()
+      .padStart(2, '0');
+
+    // Combine into student ID format YYXXXX
+    return `${year}${randomNum}`;
   }
 }

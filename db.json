@@ -333,6 +333,30 @@
       "amount": 127,
       "description": "Paid User 5",
       "date": "2025-04-20T00:00:00Z"
+    },
+    {
+      "id": "2575",
+      "amount": 50,
+      "description": "testing purponse",
+      "date": "2025-04-14T18:25:31.151Z",
+      "recipientId": 1,
+      "senderId": 1
+    },
+    {
+      "id": "2586",
+      "amount": 10,
+      "description": "test",
+      "date": "2025-04-14T18:29:38.066Z",
+      "recipientId": 1,
+      "senderId": 2
+    },
+    {
+      "id": "2578",
+      "amount": 60,
+      "description": "bill",
+      "date": "2025-04-14T18:30:16.852Z",
+      "recipientId": 1,
+      "senderId": 1
     }
   ],
   "loans": [
@@ -515,6 +539,33 @@
       "termMonths": 24,
       "interestRate": 5,
       "createdAt": "2025-03-20T00:00:00Z"
+    },
+    {
+      "id": "25400",
+      "userId": 1,
+      "amount": 12,
+      "termMonths": "2",
+      "interestRate": "2",
+      "status": "pending",
+      "createdAt": "2025-04-14T17:40:51.653Z"
+    },
+    {
+      "id": "2558",
+      "userId": 1,
+      "amount": 4,
+      "termMonths": "1",
+      "interestRate": "3.5",
+      "status": "pending",
+      "createdAt": "2025-04-14T17:44:56.071Z"
+    },
+    {
+      "id": "2591",
+      "userId": 1,
+      "amount": 1,
+      "termMonths": "12",
+      "interestRate": "0",
+      "status": "pending",
+      "createdAt": "2025-04-14T18:00:49.507Z"
     }
   ]
 }

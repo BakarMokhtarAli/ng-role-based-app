@@ -10,7 +10,7 @@ export interface Transaction {
   description: string;
   id: string;
   recipientId: number;
-  recipientName: string;
+  recipientName?: string;
   senderId: number;
-  senderName: string;
+  senderName?: string;
 }
